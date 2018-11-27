@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Action</th>
+    </tr>
+  </thead
+<tbody>
+<% @songs.each do |song| %>
+<tr><td><%= song.title %></td><td><%= button_to "Delete", song, method: :delete %></td></tr>
+<% end %>
+</tbody>
+</table>
